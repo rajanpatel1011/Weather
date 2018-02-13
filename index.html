@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>whats today weather ?</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700,400' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css'>
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<div class="container" >
+    <div class="row">
+      <header class="col-right">
+        
+        <h2>What's today?</h2>
+      </header>
+      
+      <div class="col-xs-8 col-xs-offset-2 box">
+        <div class="text-center status">
+          <p><span id="city"></span> <span id="country"></span></p>
+          <p><span class="temp"id="temp"></span><span>
+            <button id="tempunit" >Change Unit</button>
+            
+          </span></p>
+          <p><span  id="desc"></span>
+         
+        </div>
+ <p class="text-center"><span >Humidity : </span> <span id="hum"></span></p>
+ <p class="text-center"><span >Pressure : </span> <span id="pressure"></span></p><!-- <p class="text-center"><span >Sea Level : </span> <span id="sealevel"></span></p> <p class="text-center"><span >Ground Level : </span> <span id="grndlevel"></span></p> <p class="text-center"><span >Wind Speed : </span> <span id="windspeed"></span></p>        
+        -->
+        <div class="text-center all-icon">
+          <div class="icon sun-shower hide ">
+            <div class="cloud"></div>
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+            <div class="rain"></div>
+          </div>
+          <div class="icon thunder-storm hide thunderstom">
+            <div class="cloud"></div>
+            <div class="lightning">
+              <div class="bolt"></div>
+              <div class="bolt"></div>
+            </div>
+          </div>
+          <div class="icon cloudy hide clouds">
+            <div class="cloud"></div>
+            <div class="cloud"></div>
+          </div>
+          <div class="icon flurries hide snow">
+            <div class="cloud"></div>
+            <div class="snow">
+              <div class="flake"></div>
+              <div class="flake"></div>
+            </div>
+          </div>
+          <div class="icon sunny hide clear">
+            <div class="sun">
+              <div class="rays"></div>
+            </div>
+          </div>
+          <div class="icon rainy hide rain">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+          </div>
+                
+          </p>
+          
+        </div>
+
+         <p class="text-center">Created By <a href="https://rajanvpatel/" target="_blank">Ryan</a></p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- 
+{ "coord":{ "lon":159, "lat":35 }, "weather":[ { "id":500, "main":"Rain", "description":"light rain", "icon":"https://cdn.glitch.com/6e8889e5-7a72-48f0-a061-863548450de5%2F10n.png?1499366021399" } ], "base":"stations", "main":{ "temp":22.59, "pressure":1027.45, "humidity":100, "temp_min":22.59, "temp_max":22.59, "sea_level":1027.47, "grnd_level":1027.45 }, "wind":{ "speed":8.12, "deg":246.503 }, "rain":{ "3h":0.45 }, "clouds":{ "all":92 }, "dt":1499521932, "sys":{ "message":0.0034, "sunrise":1499451436, "sunset":1499503246 }, "id":0, "name":"", "cod":200 }-->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
